@@ -1,0 +1,14 @@
+Features implemented:
+1) Builtin commands
+2) System commands
+3) Foreground and background processes
+4) Input/Output redirection and piping
+5) User defined functions:
+-> jobs : prints a list of all currently running jobs along with their pid, particularly background jobs, in
+order of their creation.
+-> kjob <jobNumber> <signalNumber>: takes the job id of a running job and sends a signal value to
+that process.
+-> fg <jobNumber>: brings background job with given job number to foreground.
+-> overkill: kills all background process at once.
+-> quit : exits the shell. Shell exits only if the user types this "quit" command and
+ignore any other signal from user like : CTRL-D, CTRL-C, SIGINT, SIGCHLD etc.
